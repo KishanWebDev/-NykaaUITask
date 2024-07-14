@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nykaa Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <script>
+    tailwind.config = {
+        theme: {
+        extend: {
+            colors: {
+            nykaa: {
+                pink: "#fc2779",
+                lightPink: "#fddae8",
+            },
+            },
+        },
+        },
+    };
+    </script>
+    <style>
+    .header-link:not(:last-child)::after {
+        content: "|";
+        color: white;
+        margin-left: 0.5rem;
+    }
+    .header-link:hover {
+        color: black;
+    }
+    .header-link:hover::after {
+        color: white;
+    }
+    </style>
+</head>
+<body class="bg-white">
+    <header class="bg-[#ff91bb] text-white">
+    <div class="container mx-auto flex justify-end items-center py-2 px-4 space-x-6 text-sm lg:text-lg">
+        <a href="#" class="header-link flex items-center hover:text-black"
+        ><i class="fas fa-mobile-alt mr-2"></i> Get App</a>
+        <a href="#" class="header-link flex items-center hover:text-black"
+        ><i class="fas fa-map-marker-alt mr-2"></i> Store & Events</a>
+        <a href="#" class="header-link flex items-center hover:text-black"
+        ><i class="fas fa-gift mr-2"></i> Gift Card</a>
+        <a href="#" class="flex items-center hover:text-black"
+        ><i class="fas fa-question-circle mr-2"></i> Help</a>
+    </div>
+    </header>
+
+    <nav class="bg-white shadow-md">
+    <div class="container mx-auto flex items-center py-4 px-4 flex-nowrap">
+        <img src="./public/NykaaLogo.png" alt="Nykaa" class="h-8 mr-6" />
+        <div class="flex-grow">
+        <div class="flex space-x-6 text-black-900 font-bold">
+            <a href="#" class="hover:text-nykaa-pink">Categories</a>
+            <a href="#" class="hover:text-nykaa-pink">Brands</a>
+            <a href="#" class="hover:text-nykaa-pink">Luxe</a>
+            <a href="#" class="hover:text-nykaa-pink">Nykaa Fashion</a>
+            <a href="#" class="hover:text-nykaa-pink">Beauty Advice</a>
+        </div>
+        </div>
+        <div class="flex items-center relative">
+        <input
+            type="text"
+            placeholder="Search on Nykaa"
+            class="border rounded-l px-4 py-2 w-64 pl-10 focus:outline-none focus:ring-1 focus:ring-red-500"
+        />
+        <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+        <button class="bg-nykaa-pink text-white px-4 py-1 rounded-lg hover:bg-pink-600 ml-2 font-bold">
+            Sign in
+        </button>
+
+        <i class="fas fa-shopping-bag text-gray-800 text-xl ml-4"></i>
+        </div>
+    </div>
+    </nav>
+
+    <nav class="bg-white border-b text-lg">
+    <div class="container mx-auto flex justify-between items-center py-2 px-4">
+        <div class="flex space-x-6 text-gray-600">
+        <a href="#" class="hover:text-nykaa-pink">Makeup</a>
+        <a href="#" class="hover:text-nykaa-pink">Skin</a>
+        <a href="#" class="hover:text-nykaa-pink">Hair</a>
+        <a href="#" class="hover:text-nykaa-pink">Appliances</a>
+        <a href="#" class="hover:text-nykaa-pink">Bath & Body</a>
+        <a href="#" class="hover:text-nykaa-pink">Natural</a>
+        <a href="#" class="hover:text-nykaa-pink">Mom & Baby</a>
+        <a href="#" class="hover:text-nykaa-pink">Health & Wellness</a>
+        <a href="#" class="hover:text-nykaa-pink">Men</a>
+        <a href="#" class="hover:text-nykaa-pink">Fragrance</a>
+        <a href="#" class="hover:text-nykaa-pink">Lingerie & Accessories</a>
+        </div>
+        <a href="#" class="bg-nykaa-pink text-white px-3 py-1 rounded text-xs font-bold">OFFERS</a>
+    </div>
+    </nav>
+
+    <main class="container mx-auto mt-6 px-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="relative rounded-lg overflow-hidden shadow-md">
+        <img src="./public/img1.png" alt="YSL" class="w-full h-60 md:h-80 object-cover" />
+        <div class="absolute bottom-0 left-0 w-full p-4 text-white">
+            <h2 class="text-xl md:text-2xl font-bold mb-1">Complimentary Mini Libre</h2>
+            <p class="mb-7">On Makeup Orders of ₹4000+</p>
+            
+        </div>
+        </div>
+        <div class="relative rounded-lg overflow-hidden shadow-md">
+        <img src="./public/img2.png" alt="Foxtale" class="w-full h-60 md:h-80 object-cover" />
+        <div class="absolute bottom-0 left-0 w-full p-4 text-white">
+            <h2 class="text-xl md:text-2xl font-bold mb-2">New Launch Alert!</h2>
+            <p class="mb-7">Min 10% Off</p>
+            
+        </div>
+        </div>
+        <div class="relative rounded-lg overflow-hidden shadow-md">
+        <img src="./public/img3.png" alt="Quench" class="w-full h-60 md:h-80 object-cover" />
+        <div class="absolute bottom-0 left-0 w-full p-4 text-white">
+            <h2 class="text-xl md:text-2xl font-bold mb-0">94% Users Found Brighter Skin</h2>
+            <p class="mb-7">Explore the Korean Range!</p>
+
+        </div>
+        </div>
+    </div>
+    </main>
+
+    <div class="fixed bottom-4 right-4 bg-white rounded-full shadow-lg p-4">
+    <i class="fas fa-comments text-nykaa-pink text-2xl"></i>
+    </div>
+</body>
+</html>
